@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deni Kotseva portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="row">
+            <div class="nav__logo">
+                <p>Deni Kotseva</p>
+            </div>
+            <div class="nav__links">
+                <a href="/" class="nav__link">Home</a>
+                <a href="./projects.html" class="nav__link">Work</a>
+                <a href="./resume.html" class="nav__link">Resume</a>
+                <a href="/contact.html" class="nav__link">Contact</a>
+            </div>
+            <button class="mobile__menu" onclick="openMenu()">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <div class="mobile__backdrop">
+                <button class="mobile__menu--close" onclick="closeMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <ul class="mobile__menu--content">
+                    <li class="mobile__link"> <a href="/">Home</a></li>
+                    <li class="mobile__link"> <a href="./projects.html">Work</a></li>
+                    <li class="mobile__link"> <a href="./resume.html">Resume</a></li>
+                    <li class="mobile__link active__link"> <a href="/contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile__menu--social"> <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+                        target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="calendar">
+        <div class="row__project">
+            <h1>Calendar Design</h1>
+            <p>Stylized calendar completed as a course project for my AI course. The design is cohesive and vibrant.</p>
+            <div class="calendar__holder--big">
+                <div class="calendar__50">
+                    <a href="./assets/imgs/Calendar/Calendar_Cover.jpg" target="_blank"><img
+                            src="./assets/imgs/Calendar/Calendar_Cover.jpg" alt="" class="hero__img"></a>
+                </div>
+                <div class="calendar__30">
+                    <a href="./assets/imgs/Calendar/Calendar_AllPages.jpg" target="_blank"><img
+                            src="./assets/imgs/Calendar/Calendar_AllPages.jpg" alt="" class="hero__img"></a>
+                </div>
+                <div class="calendar__30">
+                    <a href="./assets/imgs/Calendar/Calendar_Sketch_v1.jpg" target="_blank"><img
+                            src="./assets/imgs/Calendar/Calendar_Sketch_v1.jpg" alt="" class="hero__img"></a>
+                </div>
+            </div>
+            <div class="images__holder">
+                <a href="./assets/imgs/Calendar/Calendar_Open.jpg">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Open.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Jan.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Jan.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Feb.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Feb.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Mar.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Mar.jpg" alt="">
+                    </div>
+                </a>
+                <a href="../assets/imgs/Calendar/Calendar_Apr.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Apr.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_May.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_May.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Jun.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Jun.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Jul.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Jul.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Aug.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Aug.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Sep.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Sep.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Oct.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Oct.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_Nov.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_Nov.jpg" alt="">
+                    </div>
+                </a>
+                <a href="./assets/imgs/Calendar/Calendar_dec.jpg" target="_blank">
+                    <div class="images__small">
+                        <img src="./assets/imgs/Calendar/Calendar_dec.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <h2>© 2023 Deni Kotseva</h2>
+            </div>
+            <div class="footer__item footer__navigation">
+                <h3>Navigate</h3>
+                <a href="/" class="footer__link">Home</a>
+                <a href="#work" class="footer__link">Work</a>
+                <a href="#resume" class="footer__link">Resume</a>
+                <a href="#contact" class="footer__link">Contact</a>
+            </div>
+            <div class="footer__item footer__connect">
+                <h3>Connect</h3>
+                <a href="/" class="footer__link">LinkedIn</a>
+                <a href="/" class="footer__link">Instagram</a>
+            </div>
+            <div class="footer__item footer__social">
+                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" target="_blank"><ion-icon
+                        name="logo-linkedin"></ion-icon></a>
+                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" target="_blank"><ion-icon
+                        name="logo-instagram"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
