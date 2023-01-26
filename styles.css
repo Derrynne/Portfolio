@@ -993,3 +993,11 @@ footer {
 .active__link {
     color: var(--purple);
 }
+
+
+/* VIDEO */
+
+.video {
+    width: 100%;
+    text-align: center;
+}
