@@ -67,7 +67,7 @@ nav {
 
 .row,
 .work__row {
-    width: min(90%, 2560px);
+    width: min(90VW, 2560px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -295,12 +295,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: clamp(1.4rem, 1.297rem + 0.431vw, 2.4rem);
-    font-weight: 700;
+    font-size: clamp(1.4rem, 1.297rem + 0.350vw, 2.2rem);
+    font-weight: 900;
+    transition: all 0.2 ease-in;
 }
 
 .backToProjects a {
     text-decoration: none;
+    color: var(--dark);
+}
+
+.backToProjects a:hover,
+.backToProjects a:active {
+    text-decoration: none;
+    color: var(--purple);
 }
 
 
@@ -313,10 +321,6 @@ nav {
 }
 
 .row__work {
-    /* display: flex;
-    justify-content: flex-start;
-    gap: 2.2rem;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -391,7 +395,7 @@ figure {
 }
 
 .resume__wrap {
-    width: min(90%, 2560px);
+    width: min(90VW, 2560px);
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -525,7 +529,7 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: min(90%, 2560px);
+    width: min(90VW, 2560px);
     max-height: 70%;
     padding: 0 4px;
 }
@@ -584,7 +588,7 @@ figure {
 
 #shirts,
 #wrapping {
-    width: min(90%, 2560px);
+    width: min(90VW, 2560px);
     display: flex;
     margin: 0 auto;
 }
@@ -691,7 +695,7 @@ figure img {
 /* ODESOS */
 
 main {
-    width: 90%;
+    width: 90VW;
     height: max(70%, 80rem);
     margin: 0 auto;
     padding: 0 4px;
@@ -948,7 +952,7 @@ footer {
 }
 
 .footer__wrapper {
-    width: min(90%, 2560px);
+    width: min(90VW, 2560px);
     height: 6vh;
     display: flex;
     justify-content: space-between;
@@ -1062,4 +1066,32 @@ video {
     .video {
         margin-top: 15%;
     }
+}
+
+
+/* BUTTON TO TOP */
+
+.go-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 7vh;
+    right: 30px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background-color: var(--purple);
+    color: var(--dark);
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.go-top-btn:hover {
+    background-color: #2E2E2E;
+    color: var(--purple);
+}
+
+.go-top-btn ion-icon {
+    font-size: 4rem;
 }
