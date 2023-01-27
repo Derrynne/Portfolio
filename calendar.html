@@ -135,32 +135,35 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer__wrapper">
-            <div class="footer__logo">
-                <h2>© 2023 Deni Kotseva</h2>
+    <nav>
+        <div class="row">
+            <div class="nav__logo">
+                <p>Deni Kotseva</p>
             </div>
-            <div class="footer__item footer__navigation">
-                <h3>Navigate</h3>
-                <a href="/" class="footer__link">Projects</a>
-                <a href="./resume.html" class="footer__link">Resume</a>
-                <a href="./contact.html" class="footer__link">Contact</a>
+            <div class="nav__links">
+                <a href="./index.html" class="nav__link">Projects</a>
+                <a href="./resume.html" class="nav__link">Resume</a>
+                <a href="./contact.html" class="nav__link">Contact</a>
             </div>
-            <div class="footer__item footer__connect">
-                <h3>Connect</h3>
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" class="footer__link"
-                    target="">LinkedIn</a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" class="footer__link"
-                    target="_blank">Instagram</a>
-            </div>
-            <div class="footer__item footer__social">
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" target="_blank"
-                    class="picture__link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" target="_blank"><ion-icon
-                        name="logo-instagram" class="picture__link"></ion-icon></a>
+            <button class="mobile__menu" onclick="openMenu()">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <div class="mobile__backdrop">
+                <button class="mobile__menu--close" onclick="closeMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <ul class="mobile__menu--content">
+                    <li class="mobile__link"> <a href="./index.html">Projects</a></li>
+                    <li class="mobile__link"> <a href="./resume.html">Resume</a></li>
+                    <li class="mobile__link"> <a href="./contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile__menu--social"> <a href=" " target="_blank"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
             </div>
         </div>
-    </footer>
+    </nav>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
