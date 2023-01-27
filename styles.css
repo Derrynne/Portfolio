@@ -998,6 +998,19 @@ footer {
 /* VIDEO */
 
 .video {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    width: min(100%, 256rem);
+    justify-content: center;
+}
+
+video {
+    width: min(100%, 127rem);
+    height: min(100%, 108rem);
+}
+
+@media screen and (max-width: 900px) {
+
+    .video {
+        margin-top: 15%;
+    }
 }
