@@ -188,7 +188,7 @@ nav {
     list-style: none;
 }
 
-.mobile__link {
+.mobile__link a {
     text-decoration: none;
     font-size: 3.2rem;
     font-weight: 700;
@@ -196,8 +196,8 @@ nav {
     list-style-type: none;
 }
 
-.mobile__link:hover,
-.mobile__link:focus {
+.mobile__link a:hover,
+.mobile__link a:focus {
     text-decoration: none;
     font-size: 3.2rem;
     font-weight: 700;
@@ -206,16 +206,21 @@ nav {
 }
 
 .mobile__menu--social {
-    padding-top: max(5%, 5rem)
-}
-
-.mobile__link:visited,
-.mobile__link:link {
+    padding-top: max(5%, 5rem);
     color: var(--dark);
 }
 
-.mobile__link:focus,
-.mobile__link:hover {
+.mobile__link a:visited,
+.mobile__link a:link,
+.mobile__menu--social a:visited,
+.mobile__menu--social a:visited {
+    color: var(--dark);
+}
+
+.mobile__link a:focus,
+.mobile__link a:hover,
+.mobile__menu--social a:hover,
+.mobile__menu--social a:focus {
     color: var(--purple);
 }
 
@@ -314,10 +319,24 @@ nav {
     flex-wrap: wrap;
 }
 
+.work__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .work__row h1 {
     font-size: 3.4rem;
     font-weight: 700;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    width: min(100%, 70rem);
+}
+
+.work__row p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    width: min(100%, 80rem);
 }
 
 .work__project {

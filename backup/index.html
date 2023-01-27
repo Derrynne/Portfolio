@@ -8,16 +8,19 @@
     <title>Deni Kotseva portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
+
 </head>
 
 <body>
+    <!-- NAV -->
     <nav>
         <div class="row">
             <div class="nav__logo">
                 <p>Deni Kotseva</p>
             </div>
             <div class="nav__links">
-                <a href="./index.html" class="nav__link">Projects</a>
+                <a href="/" class="nav__link active__link">Home</a>
+                <a href="./projects.html" class="nav__link">Work</a>
                 <a href="./resume.html" class="nav__link">Resume</a>
                 <a href="/contact.html" class="nav__link">Contact</a>
             </div>
@@ -29,29 +32,49 @@
                     <ion-icon name="close-outline"></ion-icon>
                 </button>
                 <ul class="mobile__menu--content">
-                    <li class="mobile__link"> <a href="./index.html">Projects</a></li>
+                    <li class="mobile__link active__link"> <a href="/" class=" active__link">Home</a></li>
+                    <li class="mobile__link"> <a href="./projects.html">Work</a></li>
                     <li class="mobile__link"> <a href="./resume.html">Resume</a></li>
                     <li class="mobile__link"> <a href="/contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile__menu--social"> <a href=" " target="_blank"><ion-icon
-                            name="logo-linkedin"></ion-icon></a>
+                <div class="mobile__menu--social"> <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+                        target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
                     <a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
                 </div>
             </div>
         </div>
     </nav>
-
     <main>
-        <div class="bags__text">
-            <h1>Short Animation</h1>
-            <p>This short animation is part of my exam project for the Adobe After Effects course I completed. Since
-                then I’ve worked also in Adobe Animate which gave me an even further knowledge in animation.</p>
-        </div>
-        <div class="video">
-            <video width="100%" controls>
-                <source src="/assets/imgs/Vector Animation_Personal Illustration.mp4" type="video/mp4">
-            </video>
-        </div>
+        <section id="home" onmousemove="moveBackground(event)">
+            <div class="row row__main">
+                <h1 class="main__hero">
+                    Hi, I’m a Graphic Designer & Illustrator based in Varna, Bulgaria!
+                </h1>
+            </div>
+
+            <div class="row row__projects">
+                <div class="main__project">
+                    <figure>
+                        <img class="project__img" src="./assets/imgs/Calendar/Calendar_Open.jpg" alt="">
+                    </figure>
+                    <h2>Project name</h2>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                        the
+                        visual form of a document or a typeface without relying on meaningful content.</p>
+                    <button class="button__project">See full project &rarr;</button>
+                </div>
+                <div class="main__project">
+                    <figure>
+                        <img class="project__img" src="./assets/imgs/Drawings/Drawings_Pt1.jpg" alt="">
+                    </figure>
+                    <h2>Project name</h2>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                        the
+                        visual form of a document or a typeface without relying on meaningful content.</p>
+                    <button class="button__project">See full project &rarr;</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer__wrapper">
@@ -60,7 +83,8 @@
             </div>
             <div class="footer__item footer__navigation">
                 <h3>Navigate</h3>
-                <a href="/" class="footer__link">Projects</a>
+                <a href="./index.html" class="footer__link">Home</a>
+                <a href="/" class="footer__link">Work</a>
                 <a href="./resume.html" class="footer__link">Resume</a>
                 <a href="./contact.html" class="footer__link">Contact</a>
             </div>
@@ -80,9 +104,9 @@
         </div>
     </footer>
 
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
