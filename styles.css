@@ -308,15 +308,19 @@ nav {
 
 
 #work {
-    margin-top: 5rem;
+    margin-top: 4rem;
     max-height: 100%;
 }
 
 .row__work {
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
     gap: 2.2rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-items: flex-start;
 }
 
 .work__row {
@@ -340,7 +344,7 @@ nav {
 }
 
 .work__project {
-    width: 24%;
+    width: 100%;
     overflow: hidden;
     padding-bottom: 4rem;
 }
@@ -355,6 +359,24 @@ figure {
 
 .work__project button:hover {
     color: var(--purple)
+}
+
+@media screen and (max-width: 1300px) {
+    .row__work {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .row__work {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .row__work {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
