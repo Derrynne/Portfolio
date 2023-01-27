@@ -67,7 +67,7 @@ nav {
 
 .row,
 .work__row {
-    width: min(90VW, 2560px);
+    width: min(90vw, 2560px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -395,7 +395,7 @@ figure {
 }
 
 .resume__wrap {
-    width: min(90VW, 2560px);
+    width: min(90vw, 2560px);
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -529,7 +529,7 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: min(90VW, 2560px);
+    width: min(90vw, 2560px);
     max-height: 70%;
     padding: 0 4px;
 }
@@ -588,7 +588,7 @@ figure {
 
 #shirts,
 #wrapping {
-    width: min(90VW, 2560px);
+    width: min(90vw, 2560px);
     display: flex;
     margin: 0 auto;
 }
@@ -695,7 +695,7 @@ figure img {
 /* ODESOS */
 
 main {
-    width: 90VW;
+    width: 90vw;
     height: max(70%, 80rem);
     margin: 0 auto;
     padding: 0 4px;
@@ -803,7 +803,8 @@ main {
     .project__right--full,
     .project__left,
     .project__right,
-    .two__projects {
+    .two__projects,
+    .full {
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -952,7 +953,7 @@ footer {
 }
 
 .footer__wrapper {
-    width: min(90VW, 2560px);
+    width: min(90vw, 2560px);
     height: 6vh;
     display: flex;
     justify-content: space-between;
