@@ -1011,6 +1011,9 @@ footer {
     color: var(--purple);
 }
 
+.contacts__email a:hover {
+    color: #937fac;
+}
 
 .contacts__email h1 {
     font-size: clamp(2.6rem, 2.434rem + 0.69vw, 4.2rem);
