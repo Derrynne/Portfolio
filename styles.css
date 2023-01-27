@@ -846,7 +846,7 @@ main {
     margin-bottom: 3vh;
 }
 
-c .bag__left,
+.bag__left,
 .bag__right {
     width: 100%;
     object-fit: contain;
@@ -869,7 +869,7 @@ c .bag__left,
 @media screen and (max-width: 800px) {
 
     #bag {
-        height: 100vh;
+        height: 100%;
     }
 
     .full {
