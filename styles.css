@@ -51,11 +51,6 @@ button {
     cursor: pointer;
 }
 
-.current__tab {
-    color: var(--purple);
-}
-
-
 
 /* NAVIGATION */
 
@@ -518,7 +513,7 @@ figure {
 
     .work__project {
         flex-wrap: wrap;
-        margin-bottom: 4rem;
+        margin-bottom: 0;
         min-width: 35%;
     }
 
@@ -1114,4 +1109,8 @@ video {
 
 .go-top-btn ion-icon {
     font-size: 4rem;
+}
+
+.current__tab {
+    color: var(--purple);
 }
