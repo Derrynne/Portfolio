@@ -147,7 +147,7 @@ nav {
 }
 
 .mobile__menu>a>.ion-icon {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     font-weight: 700;
 }
 
@@ -210,6 +210,14 @@ nav {
 .mobile__menu--social {
     padding-top: max(5%, 5rem);
     color: var(--dark);
+}
+
+.mobile__menu--social a ion-icon {
+    font-size: 4rem;
+}
+
+.mobile__menu--social a:not(:last-child) {
+    margin-right: 2rem;
 }
 
 .mobile__link a:visited,
@@ -353,7 +361,15 @@ nav {
     width: 100%;
     overflow: hidden;
     padding-bottom: 4rem;
+    transform: translateZ(0);
+    transition: all 0.3s ease-in-out;
 }
+
+.work__project:hover {
+    scale: 1.02;
+}
+
+
 
 .work__project h1 {
     font-size: 2.6rem;
@@ -715,13 +731,14 @@ main {
 .projects__wrapper--column {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
 }
 
 .two__projects {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-basis: 50%;
     min-width: 100%;
     max-height: 100%;
@@ -796,7 +813,7 @@ main {
 .new__text p {
     font-size: 1.6rem;
     font-weight: 500;
-    width: 55%;
+    width: min(100%, 70vw);
 }
 
 @media screen and (max-width: 840px) {
@@ -935,7 +952,7 @@ main {
     }
 
     .bags__text p {
-        width: min(100%, 70vw);
+        width: min(100%, 55vw);
     }
 
     .footer__logo {
