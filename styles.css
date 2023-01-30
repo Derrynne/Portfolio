@@ -445,11 +445,24 @@ figure {
     transition: all 0.1s ease-in;
 }
 
+.resume__button:visited,
+.resume__button:link {
+    background-color: var(--purple);
+    color: white;
+}
+
 .resume__button:hover {
     background-color: white;
     color: var(--purple);
     outline: 5px solid var(--purple)
 }
+
+.resume__button:active {
+    background-color: #937fac;
+    color: white;
+}
+
+
 
 .resume__skills {
     line-height: 1.4;
