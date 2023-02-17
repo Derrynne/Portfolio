@@ -969,6 +969,35 @@ main {
 
 }
 
+/* UI DESIGNS */
+
+.images__holder a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.images__holder a p {
+    font-weight: bold;
+}
+
+
+
+
+.grid__columns--sogood {
+    display: grid;
+    grid-template-columns: 5fr 1.7fr 2.3fr;
+    gap: 2rem;
+}
+
+.grid__columns--sogood img {
+    width: 100%;
+}
+
+.grid__columns--sogood p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
 /* FOOTER */
 
