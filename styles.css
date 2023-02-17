@@ -982,7 +982,6 @@ main {
 
 
 
-
 .grid__columns--sogood {
     display: grid;
     grid-template-columns: 5fr 1.7fr 2.3fr;
@@ -997,6 +996,44 @@ main {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .ui__holder {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .grid__columns--sogood {
+        grid-template-columns: 1fr;
+    }
+
+    .website__mobile {
+        display: none;
+    }
+
+    .ui__design p {
+        min-width: 100%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .grid__columns--sogood {
+        grid-template-columns: 1fr;
+    }
+
+    .website__mobile {
+        display: grid;
+    }
+
+    .website__full{
+        display: none;
+    }
+
 }
 
 /* FOOTER */
@@ -1058,6 +1095,8 @@ footer {
     .footer__connect {
         display: none;
     }
+
+
 }
 
 
