@@ -129,6 +129,10 @@ nav {
     width: 100%;
 }
 
+.purple {
+    color: var(--purple);
+}
+
 
 /* MOBILE NAV */
 
