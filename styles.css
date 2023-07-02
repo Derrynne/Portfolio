@@ -603,6 +603,16 @@ figure {
     object-fit: fill;
 }
 
+.sketch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sketch img {
+    width: 70%;
+}
+
 .images__holder {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -611,7 +621,25 @@ figure {
     margin-top: 5rem;
 }
 
-.images__holder img {
+.images__holder-woodland {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.images__holder-ui {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.images__holder img,
+.images__holder-woodland img,
+.images__holder-ui img {
     width: 100%;
 }
 
@@ -977,12 +1005,14 @@ main {
 
 /* UI DESIGNS */
 
-.images__holder a {
+.images__holder a,
+.images__holder-ui a {
     text-decoration: none;
     color: var(--dark);
 }
 
-.images__holder a p {
+.images__holder a p,
+.images__holder-ui a p {
     font-weight: bold;
 }
 
@@ -998,7 +1028,7 @@ main {
     width: 100%;
 }
 
-.grid__columns--sogood p{
+.grid__columns--sogood p {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -1008,7 +1038,7 @@ main {
 
     .ui__holder {
         grid-template-columns: 1fr;
-        
+
     }
 
     .grid__columns--sogood {
@@ -1036,7 +1066,7 @@ main {
         display: grid;
     }
 
-    .website__full{
+    .website__full {
         display: none;
     }
 
@@ -1156,12 +1186,25 @@ footer {
     display: flex;
     width: min(100%, 256rem);
     justify-content: center;
+    gap: 2rem;
 }
 
-video {
-    width: min(100%, 127rem);
-    height: min(100%, 108rem);
+.video__single {
+    max-width: 50%;
 }
+
+.video__text {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+.video__text span {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 900px) {
 
