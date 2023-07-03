@@ -1244,3 +1244,14 @@ footer {
 .current__tab {
     color: var(--purple);
 }
+
+.half__width {
+    max-width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+
+    .half__width {
+        max-width: 100%;
+    }
+}
