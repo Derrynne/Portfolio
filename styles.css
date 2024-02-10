@@ -641,7 +641,8 @@ figure {
 }
 
 @media screen and (max-width: 700px) {
-  .images__holder-woodland {
+  .images__holder-woodland,
+  ima {
     grid-template-columns: repeat(1, 1fr);
     margin-top: -5rem;
   }
@@ -654,6 +655,7 @@ figure {
   .woodland {
     width: 100%;
   }
+
 }
 
 .images__holder-ui {
@@ -685,9 +687,27 @@ figure {
   box-shadow: rgba(184, 159, 215, 0.3) 0px 3px 3px 0px;
 }
 
+@media screen and (max-width: 1300px) {
+
+  .images__holder-ui {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .images__holder-ui {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media screen and (max-width: 700px) {
   .tshirt__wrapper--small {
     width: 100%;
+  }
+
+  .images__holder-ui {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
