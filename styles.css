@@ -641,10 +641,14 @@ figure {
 }
 
 @media screen and (max-width: 700px) {
-  .images__holder-woodland,
-  ima {
+  .images__holder-woodland
+   {
     grid-template-columns: repeat(1, 1fr);
     margin-top: -5rem;
+  }
+
+  .calendar__holder {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .woodland--big {
@@ -692,9 +696,10 @@ figure {
   .images__holder-ui {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 00px) {
 
   .images__holder-ui {
     grid-template-columns: repeat(1, 1fr);
