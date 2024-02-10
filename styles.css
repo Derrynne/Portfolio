@@ -640,22 +640,21 @@ figure {
   margin-top: 1rem;
 }
 
-
 @media screen and (max-width: 700px) {
-    .images__holder-woodland {
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: -5rem;
-    }
-
-    .woodland--big {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .woodland {
-        width: 100%;
-    }
+  .images__holder-woodland {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -5rem;
   }
+
+  .woodland--big {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .woodland {
+    width: 100%;
+  }
+}
 
 .images__holder-ui {
   display: grid;
@@ -897,13 +896,13 @@ main {
 .new__text h1 {
   font-size: 2.6rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-.new__text p {
+.new__text  p {
   font-size: 1.6rem;
   font-weight: 500;
-  width: min(100%, 55vw);
+  width: min(100%, 120rem);
 }
 
 @media screen and (max-width: 840px) {
@@ -948,17 +947,41 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  grid-template-rows: repeat(auto, 75px);
+  gap: 1rem;
+}
+
+.drawings__new a {
+  overflow: hidden;
+  grid-row: span 5;
+  padding: 2rem;
 }
 
 .drawings__new a img {
   width: 100%;
+  object-fit: contain;
 }
 
 .drawings__new a img:hover {
-  scale: 1.02;
-  transition: all 0.15s ease-in-out;
-  box-shadow: rgba(184, 159, 215, 0.3) 0px 3px 3px 0px;
+  /* scale: 1.02; */
+  transition: all 0.20s ease-in-out;
+  box-shadow: rgba(184, 159, 215, 1) 0px 3px 3px 0px;
+  filter: brightness(105%);
+
+}
+
+#tall {
+  grid-row: 1 / span 7;
+}
+
+#row1-2 {
+  grid-column: 2 / span 2;
+  grid-row: 11 / span 7;
+}
+
+#row1-2 a img {
+  
+  object-fit: fill;
 }
 
 @media screen and (max-width: 700px) {
@@ -970,6 +993,10 @@ main {
 
   .grid__column a img {
     margin-bottom: 2rem;
+  }
+
+  .tall {
+    grid-row: 1 / span 2;
   }
 }
 
@@ -1224,7 +1251,7 @@ footer {
   color: var(--purple);
 }
 
-.extra__background{
+.extra__background {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -1308,4 +1335,27 @@ footer {
   .half__width {
     max-width: 100%;
   }
+}
+
+
+/* HOVER */
+
+.hover {
+  --c: var(--purple); /* the border color */
+  --b: 5px;    /* the border thickness*/
+  --g: 2.5px;     /* the gap on hover */
+  
+  /* padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%,var(--c) 0;
+  background: 
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+     var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+     0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+  transition: .3s ease-in-out, background-position .3s .3s ;
+  cursor: pointer;
+}
+.hover:hover {
+  --_i: 100%;
+  transition: all .3s, background-size .3s .3s; */
 }
