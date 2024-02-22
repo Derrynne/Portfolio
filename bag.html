@@ -1,97 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deni Kotseva portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="row">
-            <div class="nav__logo">
-         <a href="./index.html" class="logo__link"><p>Deni Kotseva</p></a>
-            </div>
-            <div class="nav__links">
-                <a href="./index.html" class="nav__link">Projects</a>
-                <a href="./resume.html" class="nav__link">Resume</a>
-                <a href="./contact.html" class="nav__link">Contact</a>
-            </div>
-            <button class="mobile__menu" onclick="openMenu()">
-                <ion-icon name="menu"></ion-icon>
-            </button>
-            <div class="mobile__backdrop">
-                <button class="mobile__menu--close" onclick="closeMenu()">
-                    <ion-icon name="close-outline"></ion-icon>
-                </button>
-                <ul class="mobile__menu--content">
-                    <li class="mobile__link"> <a href="./index.html">Projects</a></li>
-                    <li class="mobile__link"> <a href="./resume.html">Resume</a></li>
-                    <li class="mobile__link"> <a href="./contact.html">Contact</a></li>
-                </ul>
-                <div class="mobile__menu--social"> <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
-                        target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" target="_blank"><ion-icon
-                            name="logo-instagram"></ion-icon></a>
-                </div>
-            </div>
+      <div class="row">
+        <div class="nav__logo">
+          <a href="./index.html" class="logo__link"><p>Deni Kotseva</p></a>
         </div>
+        <div class="nav__links">
+          <a href="./index.html" class="nav__link">Projects</a>
+          <a href="./resume.html" class="nav__link">Resume</a>
+          <a href="./contact.html" class="nav__link">Contact</a>
+        </div>
+        <button class="mobile__menu" onclick="openMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <div class="mobile__backdrop">
+          <button class="mobile__menu--close" onclick="closeMenu()">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <ul class="mobile__menu--content">
+            <li class="mobile__link"><a href="./index.html">Projects</a></li>
+            <li class="mobile__link"><a href="./resume.html">Resume</a></li>
+            <li class="mobile__link"><a href="./contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile__menu--social">
+            <a
+              href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+              target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a
+              href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+              target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
     </nav>
     <main id="bag">
-        <div class="row__bags">
-            <div class="bags__text">
-                <h1>Tote Bag Design</h1>
-                <p>This art piece started as a tote bag design for a birthday gift. It would look good also on a shirt
-                    and other apparel items. The color palette is limited yet vibrant and the art style is clean and
-                    cute.</p>
-            </div>
-            <div class="row__bag">
-                <div class="bag__left">
-                    <a href="./assets/imgs/Shirts/BossWitch_Design.webp" target="_blank"><img
-                            src="./assets/imgs/Shirts/BossWitch_Design.webp" alt=""></a>
-                </div>
-                <div class="bag__right">
-                    <a href="./assets/imgs/Tote bag/BossWitch_Tote2.webp" target="_blank"><img
-                            src="./assets/imgs/Tote bag/BossWitch_Tote2.webp" alt=""></a>
-                </div>
-            </div>
+      <div class="row__bags">
+        <div class="bags__text">
+          <h1>Tote Bag Design</h1>
+          <p>
+            This art piece started as a tote bag design for a birthday gift. It
+            would look good also on a shirt and other apparel items. The color
+            palette is limited yet vibrant and the art style is clean and cute.
+          </p>
         </div>
+        <div class="row__bag">
+          <div class="bag__left">
+            <a href="./assets/imgs/Shirts/BossWitch_Design.webp" target="_blank"
+              ><img src="./assets/imgs/Shirts/BossWitch_Design.webp" alt=""
+            /></a>
+          </div>
+          <div class="bag__right">
+            <a
+              href="./assets/imgs/Tote bag/BossWitch_Tote2.webp"
+              target="_blank"
+              ><img src="./assets/imgs/Tote bag/BossWitch_Tote2.webp" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="footer__wrapper">
-            <div class="footer__logo">
-                <h2>© 2024 Deni Kotseva</h2>
-            </div>
-            <div class="footer__item footer__navigation">
-                <h3>Navigate</h3>
-                <a href="./index.html" class="footer__link">Projects</a>
-                <a href="./resume.html" class="footer__link">Resume</a>
-                <a href="./contact.html" class="footer__link">Contact</a>
-            </div>
-            <div class="footer__item footer__connect">
-                <h3>Connect</h3>
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" class="footer__link"
-                    target="">LinkedIn</a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" class="footer__link"
-                    target="_blank">Instagram</a>
-            </div>
-            <div class="footer__item footer__social">
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" target="_blank"
-                    class="picture__link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" target="_blank"><ion-icon
-                        name="logo-instagram" class="picture__link"></ion-icon></a>
-            </div>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <h2>Copyright © 2024 Denislava Kotseva. All rights reserved.</h2>
         </div>
+        <div class="footer__item footer__navigation">
+          <h3>Navigate</h3>
+          <a href="./index.html" class="footer__link">Projects</a>
+          <a href="./resume.html" class="footer__link">Resume</a>
+          <a href="./contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__item footer__connect">
+          <h3>Connect</h3>
+          <a
+            href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+            class="footer__link"
+            target=""
+            >LinkedIn</a
+          >
+          <a
+            href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+            class="footer__link"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+        <div class="footer__item footer__social">
+          <a
+            href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+            target="_blank"
+            class="picture__link"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+            target="_blank"
+            ><ion-icon name="logo-instagram" class="picture__link"></ion-icon
+          ></a>
+        </div>
+      </div>
     </footer>
 
-    <button class="toTop"><ion-icon name="caret-up-outline" onclick="topFunction()"></ion-icon></button>
+    <button class="toTop">
+      <ion-icon name="caret-up-outline" onclick="topFunction()"></ion-icon>
+    </button>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

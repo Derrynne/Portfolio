@@ -1,155 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deni Kotseva portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
-</head>
-<nav>
+  </head>
+  <nav>
     <div class="row">
-        <div class="nav__logo">
-            <p>Deni Kotseva</p>
-        </div>
-        <div class="nav__links">
-            <a href="/" class="nav__link">Home</a>
-            <a href="./projects.html" class="nav__link">Work</a>
-            <a href="./resume.html" class="nav__link">Resume</a>
-            <a href="/contact.html" class="nav__link">Contact</a>
-        </div>
-        <button class="mobile__menu" onclick="openMenu()">
-            <ion-icon name="menu"></ion-icon>
+      <div class="nav__logo">
+        <p>Deni Kotseva</p>
+      </div>
+      <div class="nav__links">
+        <a href="/" class="nav__link">Home</a>
+        <a href="./projects.html" class="nav__link">Work</a>
+        <a href="./resume.html" class="nav__link">Resume</a>
+        <a href="/contact.html" class="nav__link">Contact</a>
+      </div>
+      <button class="mobile__menu" onclick="openMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <div class="mobile__backdrop">
+        <button class="mobile__menu--close" onclick="closeMenu()">
+          <ion-icon name="close-outline"></ion-icon>
         </button>
-        <div class="mobile__backdrop">
-            <button class="mobile__menu--close" onclick="closeMenu()">
-                <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <ul class="mobile__menu--content">
-                <li class="mobile__link"> <a href="/">Home</a></li>
-                <li class="mobile__link"> <a href="./projects.html">Work</a></li>
-                <li class="mobile__link"> <a href="./resume.html">Resume</a></li>
-                <li class="mobile__link"> <a href="/contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile__menu--social"> <a href=" " target="_blank"><ion-icon
-                        name="logo-linkedin"></ion-icon></a>
-                <a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            </div>
+        <ul class="mobile__menu--content">
+          <li class="mobile__link"><a href="/">Home</a></li>
+          <li class="mobile__link"><a href="./projects.html">Work</a></li>
+          <li class="mobile__link"><a href="./resume.html">Resume</a></li>
+          <li class="mobile__link"><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile__menu--social">
+          <a href=" " target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a href="" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
         </div>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<body>
+  <body>
     <section id="work">
-        <div class="work__row">
-            <h1>Work</h1>
+      <div class="work__row">
+        <h1>Work</h1>
+      </div>
+      <div class="row row__work">
+        <div class="work__project">
+          <figure>
+            <img
+              class="project__img"
+              src="./assets/imgs/Calendar/Calendar_Open_cropped.webp"
+              alt=""
+            />
+          </figure>
+          <h2>Calendar Design</h2>
+          <p>
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content.
+          </p>
+          <a href="./calendar.html"
+            ><button class="button__project">See full project &rarr;</button></a
+          >
         </div>
-        <div class="row row__work">
-            <div class="work__project">
-                <figure>
-                    <img class="project__img" src="./assets/imgs/Calendar/Calendar_Open_cropped.webp" alt="">
-                </figure>
-                <h2>Calendar Design</h2>
-                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                    the
-                    visual form of a document or a typeface without relying on meaningful content.</p>
-                <a href="./calendar.html"><button class="button__project">See full project &rarr;</button></a>
-            </div>
-            <div class="work__project">
-                <figure class="odesos">
-                    <img class="project__img" src="./assets/imgs/Odesos Brand/Odesos.webp" alt="">
-                </figure>
-                <h2>Odesos Brand Design</h2>
-                <p>This brand design includes several items. It was done and approved as an actual project but
-                    unfortunately the products never reached the market. It includes logo, stamp, label, cup and lid
-                    designs.</p>
-                <a href="./odesos.html"><button class="button__project">See full project &rarr;</button></a>
-            </div>
-            <div class="work__project">
-                <figure>
-                    <img class="project__img" src="./assets/imgs/Shirts/BitcoinToTheMoon_Shirt.webp" alt="">
-                </figure>
-                <h2>Shirt Designs</h2>
-                <p>These are some of my shirt designs I have done as personal projects. Most of them have been created
-                    as commissions and printed as gifts. It gives me great joy creating apparel designs due
-                    to
-                    their tangible nature.</p>
-                <a href="./shirts.html"><button class="button__project">See full project &rarr;</button></a>
-            </div>
-            <div class="work__project">
-                <figure>
-                    <img class="project__img" src="./assets/imgs/Drawings/Drawings_Pt1_cropped.webp" alt="">
-                </figure>
-                <h2>Personal Drawings</h2>
-                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                    the
-                    visual form of a document or a typeface without relying on meaningful content.</p>
-                <a href="./drawings.html"><button class="button__project">See full project &rarr;</button></a>
-            </div>
-            <div class="work__project">
-                <figure>
-                    <img class="project__img" src="./assets/imgs/Ghosties_Wrapping Paper1.webp" alt="">
-                </figure>
-                <h2>Wrapping Paper Designs</h2>
-                <p>A couple of wrapping paper designs I did as a personal project. It might not be customary to wrap
-                    gifts for Halloween but these paper designs might serve well for wrapping a gift for a horror fan on
-                    other occasions.</p>
-                <a href="./wrapping.html"><button class="button__project">See full project &rarr;</button></a>
-            </div>
-            <div class="work__project">
-                <figure>
-                    <img class="project__img" src="./assets/imgs/Tote bag/BossWitch_Tote2.webp" alt="">
-                </figure>
-                <h2>Tote Bag Design</h2>
-                <p>This art piece started as a tote bag design for a birthday gift. It would look good also on a shirt
-                    and other apparel items. The color palette is limited yet vibrant and the art style is clean and
-                    cute.</p>
-                <a href="./bag.html"><button class="button__project">See full project &rarr;</button></a>
-            </div>
-            <div class="work__project">
-                <figure>
-                    <img class="project__img" src="./assets/imgs/Animation_crop.webp" alt="">
-                </figure>
-                <h2>Short Animation</h2>
-                <p>This short animation is part of my exam project for the Adobe After Effects course I completed. Since
-                    then I’ve worked also in Adobe Animate which gave me an even further knowledge in animation.</p>
-                <a href="./video.html"><button class="button__project">See full project &rarr;</button></a>
-            </div>
+        <div class="work__project">
+          <figure class="odesos">
+            <img
+              class="project__img"
+              src="./assets/imgs/Odesos Brand/Odesos.webp"
+              alt=""
+            />
+          </figure>
+          <h2>Odesos Brand Design</h2>
+          <p>
+            This brand design includes several items. It was done and approved
+            as an actual project but unfortunately the products never reached
+            the market. It includes logo, stamp, label, cup and lid designs.
+          </p>
+          <a href="./odesos.html"
+            ><button class="button__project">See full project &rarr;</button></a
+          >
         </div>
+        <div class="work__project">
+          <figure>
+            <img
+              class="project__img"
+              src="./assets/imgs/Shirts/BitcoinToTheMoon_Shirt.webp"
+              alt=""
+            />
+          </figure>
+          <h2>Shirt Designs</h2>
+          <p>
+            These are some of my shirt designs I have done as personal projects.
+            Most of them have been created as commissions and printed as gifts.
+            It gives me great joy creating apparel designs due to their tangible
+            nature.
+          </p>
+          <a href="./shirts.html"
+            ><button class="button__project">See full project &rarr;</button></a
+          >
+        </div>
+        <div class="work__project">
+          <figure>
+            <img
+              class="project__img"
+              src="./assets/imgs/Drawings/Drawings_Pt1_cropped.webp"
+              alt=""
+            />
+          </figure>
+          <h2>Personal Drawings</h2>
+          <p>
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content.
+          </p>
+          <a href="./drawings.html"
+            ><button class="button__project">See full project &rarr;</button></a
+          >
+        </div>
+        <div class="work__project">
+          <figure>
+            <img
+              class="project__img"
+              src="./assets/imgs/Ghosties_Wrapping Paper1.webp"
+              alt=""
+            />
+          </figure>
+          <h2>Wrapping Paper Designs</h2>
+          <p>
+            A couple of wrapping paper designs I did as a personal project. It
+            might not be customary to wrap gifts for Halloween but these paper
+            designs might serve well for wrapping a gift for a horror fan on
+            other occasions.
+          </p>
+          <a href="./wrapping.html"
+            ><button class="button__project">See full project &rarr;</button></a
+          >
+        </div>
+        <div class="work__project">
+          <figure>
+            <img
+              class="project__img"
+              src="./assets/imgs/Tote bag/BossWitch_Tote2.webp"
+              alt=""
+            />
+          </figure>
+          <h2>Tote Bag Design</h2>
+          <p>
+            This art piece started as a tote bag design for a birthday gift. It
+            would look good also on a shirt and other apparel items. The color
+            palette is limited yet vibrant and the art style is clean and cute.
+          </p>
+          <a href="./bag.html"
+            ><button class="button__project">See full project &rarr;</button></a
+          >
+        </div>
+        <div class="work__project">
+          <figure>
+            <img
+              class="project__img"
+              src="./assets/imgs/Animation_crop.webp"
+              alt=""
+            />
+          </figure>
+          <h2>Short Animation</h2>
+          <p>
+            This short animation is part of my exam project for the Adobe After
+            Effects course I completed. Since then I’ve worked also in Adobe
+            Animate which gave me an even further knowledge in animation.
+          </p>
+          <a href="./video.html"
+            ><button class="button__project">See full project &rarr;</button></a
+          >
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="footer__wrapper">
-            <div class="footer__logo">
-                <h2>© 2024 Deni Kotseva</h2>
-            </div>
-            <div class="footer__item footer__navigation">
-                <h3>Navigate</h3>
-                <a href="./index.html" class="footer__link">Home</a>
-                <a href="/" class="footer__link">Work</a>
-                <a href="./resume.html" class="footer__link">Resume</a>
-                <a href="./contact.html" class="footer__link">Contact</a>
-            </div>
-            <div class="footer__item footer__connect">
-                <h3>Connect</h3>
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" class="footer__link"
-                    target="">LinkedIn</a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" class="footer__link"
-                    target="_blank">Instagram</a>
-            </div>
-            <div class="footer__item footer__social">
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" target="_blank"
-                    class="picture__link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" target="_blank"><ion-icon
-                        name="logo-instagram" class="picture__link"></ion-icon></a>
-            </div>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <h2>Copyright © 2024 Denislava Kotseva. All rights reserved.</h2>
         </div>
+        <div class="footer__item footer__navigation">
+          <h3>Navigate</h3>
+          <a href="./index.html" class="footer__link">Home</a>
+          <a href="/" class="footer__link">Work</a>
+          <a href="./resume.html" class="footer__link">Resume</a>
+          <a href="./contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__item footer__connect">
+          <h3>Connect</h3>
+          <a
+            href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+            class="footer__link"
+            target=""
+            >LinkedIn</a
+          >
+          <a
+            href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+            class="footer__link"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+        <div class="footer__item footer__social">
+          <a
+            href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+            target="_blank"
+            class="picture__link"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+            target="_blank"
+            ><ion-icon name="logo-instagram" class="picture__link"></ion-icon
+          ></a>
+        </div>
+      </div>
     </footer>
 
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

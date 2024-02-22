@@ -641,8 +641,7 @@ figure {
 }
 
 @media screen and (max-width: 700px) {
-  .images__holder-woodland
-   {
+  .images__holder-woodland {
     grid-template-columns: repeat(1, 1fr);
     margin-top: -5rem;
   }
@@ -659,7 +658,6 @@ figure {
   .woodland {
     width: 100%;
   }
-
 }
 
 .images__holder-ui {
@@ -692,15 +690,12 @@ figure {
 }
 
 @media screen and (max-width: 1300px) {
-
   .images__holder-ui {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media screen and (max-width: 00px) {
-
   .images__holder-ui {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -924,7 +919,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.new__text  p {
+.new__text p {
   font-size: 1.6rem;
   font-weight: 500;
   width: min(100%, 120rem);
@@ -989,10 +984,9 @@ main {
 
 .drawings__new a img:hover {
   /* scale: 1.02; */
-  transition: all 0.20s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-shadow: rgba(184, 159, 215, 1) 0px 3px 3px 0px;
   filter: brightness(105%);
-
 }
 
 #tall {
@@ -1005,7 +999,6 @@ main {
 }
 
 #row1-2 a img {
-  
   object-fit: fill;
 }
 
@@ -1362,14 +1355,13 @@ footer {
   }
 }
 
-
 /* HOVER */
 
 .hover {
   --c: var(--purple); /* the border color */
-  --b: 5px;    /* the border thickness*/
-  --g: 2.5px;     /* the gap on hover */
-  
+  --b: 5px; /* the border thickness*/
+  --g: 2.5px; /* the gap on hover */
+
   /* padding: calc(var(--g) + var(--b));
   --_g: #0000 25%,var(--c) 0;
   background: 

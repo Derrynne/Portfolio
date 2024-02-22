@@ -1,218 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deni Kotseva portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="row">
-            <div class="nav__logo">
-                <a href="./index.html" class="logo__link">
-                    <p>Deni Kotseva</p>
-                </a>
-            </div>
-            <div class="nav__links">
-                <a href="./index.html" class="nav__link">Projects</a>
-                <a href="./resume.html" class="nav__link">Resume</a>
-                <a href="./contact.html" class="nav__link">Contact</a>
-            </div>
-            <button class="mobile__menu" onclick="openMenu()">
-                <ion-icon name="menu"></ion-icon>
-            </button>
-            <div class="mobile__backdrop">
-                <button class="mobile__menu--close" onclick="closeMenu()">
-                    <ion-icon name="close-outline"></ion-icon>
-                </button>
-                <ul class="mobile__menu--content">
-                    <li class="mobile__link"> <a href="./index.html">Projects</a></li>
-                    <li class="mobile__link"> <a href="./resume.html">Resume</a></li>
-                    <li class="mobile__link"> <a href="./contact.html">Contact</a></li>
-                </ul>
-                <div class="mobile__menu--social"> <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
-                        target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" target="_blank"><ion-icon
-                            name="logo-instagram"></ion-icon></a>
-                </div>
-            </div>
+      <div class="row">
+        <div class="nav__logo">
+          <a href="./index.html" class="logo__link">
+            <p>Deni Kotseva</p>
+          </a>
         </div>
+        <div class="nav__links">
+          <a href="./index.html" class="nav__link">Projects</a>
+          <a href="./resume.html" class="nav__link">Resume</a>
+          <a href="./contact.html" class="nav__link">Contact</a>
+        </div>
+        <button class="mobile__menu" onclick="openMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <div class="mobile__backdrop">
+          <button class="mobile__menu--close" onclick="closeMenu()">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <ul class="mobile__menu--content">
+            <li class="mobile__link"><a href="./index.html">Projects</a></li>
+            <li class="mobile__link"><a href="./resume.html">Resume</a></li>
+            <li class="mobile__link"><a href="./contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile__menu--social">
+            <a
+              href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+              target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a
+              href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+              target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
     </nav>
     <section id="resume">
-        <div class="row row__column">
-            <h1>Resume</h1>
+      <div class="row row__column">
+        <h1>Resume</h1>
+      </div>
+      <div class="resume__wrap">
+        <div class="resume__text">
+          <h1>
+            Hi, I’m Deni! I’m a Graphic Designer & Illustrator based in Varna,
+            Bulgaria! I've been in the graphic design field for a couple of
+            years now and I enjoy learning new things everyday. Being creative
+            brings fulfilment and meaning to my work.
+          </h1>
         </div>
-        <div class="resume__wrap">
-            <div class="resume__text">
-                <h1>Hi, I’m Deni! I’m a Graphic Designer & Illustrator based in Varna, Bulgaria! I've been in the
-                    graphic design field for a couple of years now and I enjoy learning new things everyday. Being
-                    creative brings fulfilment and meaning to my work.</h1>
-            </div>
-            <div class="resume__download">
-                <a href="./assets/Resume_Denislava_Kotseva_October_2023.pdf" download><button class="resume__button">
-                        Download PDF
-                        version</button></a>
-            </div>
+        <div class="resume__download">
+          <a href="./assets/Resume_Denislava_Kotseva_October_2023.pdf" download
+            ><button class="resume__button">Download PDF version</button></a
+          >
         </div>
-        <div class=" row resume__skills">
-            <div class="resume__breakdown">
-                <h2 class="purple">Software</h2>
-                <p>Adobe (Photoshop, Illustrator, InDesign, XD, After Effects, Premiere Pro, Animate)</p>
-                <hr>
-                <p>Figma</p>
-                <hr>
-                <p>Microsoft Office (Excel, Word, Outlook, PowerPoint)</p>
-                <hr>
-                <p>Autodesk 3DsMax</p>
-                <hr>
-                <p>Autodesk Maya</p>
-                <hr>
-                <p>Blender</p>
-                <hr>
-                <p>Procreate</p>
-                <hr>
-                <p>Aseprite</p>
+      </div>
+      <div class="row resume__skills">
+        <div class="resume__breakdown">
+          <h2 class="purple">Software</h2>
+          <p>
+            Adobe (Photoshop, Illustrator, InDesign, XD, After Effects, Premiere
+            Pro, Animate)
+          </p>
+          <hr />
+          <p>Figma</p>
+          <hr />
+          <p>Microsoft Office (Excel, Word, Outlook, PowerPoint)</p>
+          <hr />
+          <p>Autodesk 3DsMax</p>
+          <hr />
+          <p>Autodesk Maya</p>
+          <hr />
+          <p>Blender</p>
+          <hr />
+          <p>Procreate</p>
+          <hr />
+          <p>Aseprite</p>
 
-                <div class="resume__languages">
-                    <h2 class="purple">Languages</h2>
-                    <p>Bulgarian (mother language)</p>
-                    <hr>
-                    <p>English - C1</p>
-                    <hr>
-                    <p>German - C1</p>
-                    <hr>
-                    <p>Korean (basic level)</p>
-                    <hr>
-                </div>
-            </div>
-            <div class="resume__breakdown">
-                <h2 class="purple">Skills</h2>
-                <p>attention to quality and detail</p>
-                <hr>
-                <p>flexibility in task prioritization</p>
-                <hr>
-                <p>following design briefs</p>
-                <hr>
-                <p>cross-team collaboration on projects</p>
-                <hr>
-                <p>basic level of SQL and HTML5/CSS</p>
-                <hr>
-                <p>ability to quickly master new software and platforms</p>
-                <hr>
-                <p>managing a tight schedule with fixed deadlines</p>
-                <hr>
-                <p>presenting information in clear and compelling manner</p>
-            </div>
-            <div class="resume__breakdown">
-                <h2 class="purple">Education & training</h2>
-                <p>10/2019 - 03/2021 <br><strong>Design/Creative Specialist Program</strong><br>SoftUni
-                    Creative</p>
-                <hr>
-                <p>09/2018 - 10/2018 <br><strong>Design Fundamentals</strong><br>SoftUni Creative</p>
-                <hr>
-                <p>08/2009 - 06/2013 <br><strong>Bachelor’s Degree in International Economic
-                        Relations</strong><br>University of Economics - Varna</p>
-                <hr>
-                <p>08/2004 - 06/2009 <br><strong>German and English Language</strong><br>"Zahari Stoyanov"
-                    Foreign
-                    Language Highschool - Sliven</p>
-                <hr>
-                <p>08/1997 - 06/2004 <br><strong>Elementary and Primary Education</strong><br>"Peyo
-                    Kracholov
-                    Yavorov" Secondary School - Sliven</p>
-            </div>
-            <div class="resume__breakdown">
-                <h2 class="purple">Work XP</h2>
-                <p>01/2020 - CURRENT<br><strong>Freelance Graphic Designer &
-                        Illustrator</strong><br>Self-Employed
-                </p>
-                <hr>
-                <p>04/2024 - 09/2024 <br><strong>Graphic Designer</strong><br>Know-How Digital
-                </p>
-                <hr>
-
-                <p>02/2022 - 07/2022 <br><strong>Computer Animator</strong><br>Ucha.se </p>
-                <hr>
-                <p>12/2019 - 01/2020 <br><strong>Marketing Expert ( freelance project)</strong><br>“Radoni-KK”
-                    Ltd.</p>
-                <hr>
-                <p>05/2016 - 11/2019 <br><strong>Online Marketing & Data Analysis
-                        Specialist</strong><br>Sales-Promotions (currently Benamic)</p>
-                <hr>
-                <p>09/2013 - 05/2016 <br><strong>Customer Service
-                        Representative</strong><br>Sales-Promotions
-                    (currently Benamic)</p>
-                <hr>
-                <p>05/2012 - 08/2012 <br><strong>Receptionist</strong><br>PrimaSol Sunrise</p>
-            </div>
-            <div class="resume__breakdown smaller">
-                <h2 class="purple">Interests & Likes</h2>
-                <p>Art</p>
-                <hr>
-                <p>Games</p>
-                <hr>
-                <p>Books</p>
-                <hr>
-                <p>Anime & Manga</p>
-                <hr>
-                <p>Cartoons & Comic Books</p>
-                <hr>
-                <p>Puzzles</p>
-                <hr>
-                <p>Languages</p>
-                <hr>
-                <p>Cool Music</p>
-                <hr>
-                <p>Mythology</p>
-                <hr>
-                <p>Fantasy</p>
-                <hr>
-                <p>Sci-fi</p>
-                <hr>
-                <p>Horror</p>
-                <hr>
-                <p>Space</p>
-                <hr>
-            </div>
+          <div class="resume__languages">
+            <h2 class="purple">Languages</h2>
+            <p>Bulgarian (mother language)</p>
+            <hr />
+            <p>English - C1</p>
+            <hr />
+            <p>German - C1</p>
+            <hr />
+            <p>Korean (basic level)</p>
+            <hr />
+          </div>
         </div>
+        <div class="resume__breakdown">
+          <h2 class="purple">Skills</h2>
+          <p>attention to quality and detail</p>
+          <hr />
+          <p>flexibility in task prioritization</p>
+          <hr />
+          <p>following design briefs</p>
+          <hr />
+          <p>cross-team collaboration on projects</p>
+          <hr />
+          <p>basic level of SQL and HTML5/CSS</p>
+          <hr />
+          <p>ability to quickly master new software and platforms</p>
+          <hr />
+          <p>managing a tight schedule with fixed deadlines</p>
+          <hr />
+          <p>presenting information in clear and compelling manner</p>
+        </div>
+        <div class="resume__breakdown">
+          <h2 class="purple">Education & training</h2>
+          <p>
+            10/2019 - 03/2021 <br /><strong
+              >Design/Creative Specialist Program</strong
+            ><br />SoftUni Creative
+          </p>
+          <hr />
+          <p>
+            09/2018 - 10/2018 <br /><strong>Design Fundamentals</strong
+            ><br />SoftUni Creative
+          </p>
+          <hr />
+          <p>
+            08/2009 - 06/2013 <br /><strong
+              >Bachelor’s Degree in International Economic Relations</strong
+            ><br />University of Economics - Varna
+          </p>
+          <hr />
+          <p>
+            08/2004 - 06/2009 <br /><strong>German and English Language</strong
+            ><br />"Zahari Stoyanov" Foreign Language Highschool - Sliven
+          </p>
+          <hr />
+          <p>
+            08/1997 - 06/2004 <br /><strong
+              >Elementary and Primary Education</strong
+            ><br />"Peyo Kracholov Yavorov" Secondary School - Sliven
+          </p>
+        </div>
+        <div class="resume__breakdown">
+          <h2 class="purple">Work XP</h2>
+          <p>
+            01/2020 - CURRENT<br /><strong
+              >Freelance Graphic Designer & Illustrator</strong
+            ><br />Self-Employed
+          </p>
+          <hr />
+          <p>
+            04/2024 - 09/2024 <br /><strong>Graphic Designer</strong
+            ><br />Know-How Digital
+          </p>
+          <hr />
+
+          <p>
+            02/2022 - 07/2022 <br /><strong>Computer Animator</strong
+            ><br />Ucha.se
+          </p>
+          <hr />
+          <p>
+            12/2019 - 01/2020 <br /><strong
+              >Marketing Expert ( freelance project)</strong
+            ><br />“Radoni-KK” Ltd.
+          </p>
+          <hr />
+          <p>
+            05/2016 - 11/2019 <br /><strong
+              >Online Marketing & Data Analysis Specialist</strong
+            ><br />Sales-Promotions (currently Benamic)
+          </p>
+          <hr />
+          <p>
+            09/2013 - 05/2016 <br /><strong
+              >Customer Service Representative</strong
+            ><br />Sales-Promotions (currently Benamic)
+          </p>
+          <hr />
+          <p>
+            05/2012 - 08/2012 <br /><strong>Receptionist</strong><br />PrimaSol
+            Sunrise
+          </p>
+        </div>
+        <div class="resume__breakdown smaller">
+          <h2 class="purple">Interests & Likes</h2>
+          <p>Art</p>
+          <hr />
+          <p>Games</p>
+          <hr />
+          <p>Books</p>
+          <hr />
+          <p>Anime & Manga</p>
+          <hr />
+          <p>Cartoons & Comic Books</p>
+          <hr />
+          <p>Puzzles</p>
+          <hr />
+          <p>Languages</p>
+          <hr />
+          <p>Cool Music</p>
+          <hr />
+          <p>Mythology</p>
+          <hr />
+          <p>Fantasy</p>
+          <hr />
+          <p>Sci-fi</p>
+          <hr />
+          <p>Horror</p>
+          <hr />
+          <p>Space</p>
+          <hr />
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="footer__wrapper">
-            <div class="footer__logo">
-                <h2>© 2024 Deni Kotseva</h2>
-            </div>
-            <div class="footer__item footer__navigation">
-                <h3>Navigate</h3>
-                <a href="./index.html" class="footer__link">Projects</a>
-                <a href="./resume.html" class="footer__link">Resume</a>
-                <a href="./contact.html" class="footer__link">Contact</a>
-            </div>
-            <div class="footer__item footer__connect">
-                <h3>Connect</h3>
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" class="footer__link"
-                    target="">LinkedIn</a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" class="footer__link"
-                    target="_blank">Instagram</a>
-            </div>
-            <div class="footer__item footer__social">
-                <a href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/" target="_blank"
-                    class="picture__link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM=" target="_blank"><ion-icon
-                        name="logo-instagram" class="picture__link"></ion-icon></a>
-            </div>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <h2>Copyright © 2024 Denislava Kotseva. All rights reserved.</h2>
         </div>
+        <div class="footer__item footer__navigation">
+          <h3>Navigate</h3>
+          <a href="./index.html" class="footer__link">Projects</a>
+          <a href="./resume.html" class="footer__link">Resume</a>
+          <a href="./contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__item footer__connect">
+          <h3>Connect</h3>
+          <a
+            href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+            class="footer__link"
+            target=""
+            >LinkedIn</a
+          >
+          <a
+            href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+            class="footer__link"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+        <div class="footer__item footer__social">
+          <a
+            href="https://www.linkedin.com/in/denislava-kotseva-b5b64518b/"
+            target="_blank"
+            class="picture__link"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://instagram.com/derrynneart?igshid=ZDdkNTZiNTM="
+            target="_blank"
+            ><ion-icon name="logo-instagram" class="picture__link"></ion-icon
+          ></a>
+        </div>
+      </div>
     </footer>
 
-    <button class="go-top-btn"><ion-icon name="arrow-up-circle-outline"></ion-icon></button>
+    <button class="go-top-btn">
+      <ion-icon name="arrow-up-circle-outline"></ion-icon>
+    </button>
 
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
