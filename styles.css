@@ -594,6 +594,18 @@ figure {
   width: 100%;
 }
 
+.calendar__holder--big-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.calendar__holder--big-2 img {
+  width: 100%;
+}
+
+
 .calendar__30 {
   width: 26%;
   height: min(80%, 80rem);
@@ -1002,11 +1014,16 @@ main {
 }
 
 .drawings__new a img:hover,
-.drawings__new--social a img:hover {
+.drawings__new--social a img:hover,
+.calendar__holder a img:hover {
   /* scale: 1.02; */
   transition: all 0.2s ease-in-out;
   box-shadow: rgba(184, 159, 215, 1) 0px 3px 3px 0px;
   filter: brightness(105%);
+}
+
+.calendar__holder h2 {
+  color: var(--purple);
 }
 
 .social_media__paragraph {
@@ -1050,6 +1067,7 @@ main {
 .grid3{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
 }
 
 .gridspan2 {
@@ -1076,6 +1094,11 @@ main {
 #span2--social{
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+}
+
+.span2--social{
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
 }
 
 #span2__middle--social{
@@ -1455,4 +1478,8 @@ footer {
   --c: var(--purple); /* the border color */
   --b: 5px; /* the border thickness*/
   --g: 2.5px; /* the gap on hover */
+}
+
+.activeItem {
+  font-weight: bold;
 }
